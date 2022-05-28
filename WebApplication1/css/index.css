@@ -1,0 +1,82 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+#Milkyway {
+    width: 1530px;
+    height: 730px;
+    overflow: hidden;
+    background-image: url('../img/10.jpg');
+    background-repeat: no-repeat;
+    background-size: 1540px 730px;
+}
+
+    #Milkyway ul li {
+        float: left;
+    }
+
+.spin {
+    position: relative;
+    animation: move 20s infinite;
+    -webkit-animation: move 20s infinite;
+}
+
+@keyframes move {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes move {
+    from {
+        transform: rotate(180deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+#ss {
+    width: 400px;
+    height: 310px;
+    position: absolute;
+    left: 160px;
+    top: 390px;
+    border: 1px solid rgba(255,255,255,0.2);
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+}
+
+    #ss ul li {
+        margin-top: 10px;
+    }
+
+        #ss ul li a input {
+            height: 20px;
+            border: none;
+            outline: none;
+        }
+
+.font {
+    color: black;
+}
+#Milkyway > ul > li > a > span {
+    display: none;
+}
+
+#Milkyway > ul > li > a:hover span {
+    display: block;
+    font-family: 宋体;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}

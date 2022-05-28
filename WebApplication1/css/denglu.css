@@ -1,0 +1,292 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+#Milkyway {
+    width: 1530px;
+    height: 730px;
+    overflow: hidden;
+    background-image: url('../img/10.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 1540px 730px;
+}
+
+    #Milkyway ul li {
+        float: left;
+    }
+
+#outcircle {
+    width: 355px;
+    height: 355px;
+    line-height: 355px;
+    text-align: center;
+    border-radius: 100%;
+    border: 1px solid rgba(255,255,255,0.3);
+    position: relative;
+    left: 15%;
+    top: 15%;
+}
+
+#circle1 {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 100%;
+    position: absolute;
+    background: url('../img/8.jpg');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    animation: rotate1 5s infinite linear;
+}
+
+@keyframes rotate1 {
+    from {
+        transform: rotate(0turn) translate(0,-180px) rotate(1turn)
+    }
+
+    to {
+        transform: rotate(1turn) translate(0,-180px) rotate(0turn)
+    }
+}
+
+#circle2 {
+    height: 38px;
+    width: 38px;
+    line-height: 38px;
+    border-radius: 100%;
+    position: absolute;
+    background: url('../img/8.png');
+    background-size: 38px;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    margin-top: -19px;
+    margin-left: -19px;
+    animation: rotate2 3s infinite linear;
+}
+
+@keyframes rotate2 {
+    from {
+        transform: rotate(0turn) translate(180px, 0) rotate(1turn)
+    }
+
+    to {
+        transform: rotate(1turn) translate(180px, 0) rotate(0turn)
+    }
+}
+
+#circle3 {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    background: url('../img/2.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    animation: rotate5 4s infinite linear;
+}
+
+@keyframes rotate5 {
+    from {
+        transform: rotate(0turn) translate(-210px, 0) rotate(1turn)
+    }
+
+    to {
+        transform: rotate(1turn) translate(-210px, 0) rotate(0turn)
+    }
+}
+
+#circle4 {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    background: url('../img/7.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    animation: rotate6 7s infinite linear;
+}
+
+@keyframes rotate6 {
+    from {
+        transform: rotate(0turn) translate(260px, 0) rotate(1turn)
+    }
+
+    to {
+        transform: rotate(1turn) translate(260px, 0) rotate(0turn)
+    }
+}
+
+#bigcircle {
+    width: 520px;
+    height: 520px;
+    line-height: 520px;
+    text-align: center;
+    border-radius: 100%;
+    position: absolute;
+    border: 1px solid rgba(255,255,255,0.3);
+    left: 7%;
+    top: 15%;
+}
+
+#smallcircle {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    border-radius: 100%;
+    position: absolute;
+    background: url('../img/13.jpg');
+    background-size: 70px;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+    animation: rotate3 7s infinite linear;
+}
+
+@keyframes rotate3 {
+    from {
+        transform: rotate(0turn) translate(0,-260px) rotate(1turn)
+    }
+
+    to {
+        transform: rotate(1turn) translate(0,-260px) rotate(0turn)
+    }
+}
+
+#smallcircle2 {
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
+    border-radius: 100%;
+    position: absolute;
+    background: url('../img/1.png');
+    background-size: 70px;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    margin-top: -45px;
+    margin-left: -45px;
+    animation: rotate4 8s infinite linear;
+}
+
+@keyframes rotate4 {
+    from {
+        transform: rotate(0turn) translate(0,-215px) rotate(1turn)
+    }
+
+    to {
+        transform: rotate(1turn) translate(0,-215px) rotate(0turn)
+    }
+}
+
+#smallcircle3 {
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    border-radius: 100%;
+    position: absolute;
+    background: url('../img/34.jpg');
+    background-size: 80px;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    animation: rotate7 9s infinite linear;
+}
+
+@keyframes rotate7 {
+    from {
+        transform: rotate(0turn) translate(0,265px) rotate(1turn)
+    }
+
+    to {
+        transform: rotate(1turn) translate(0,265px) rotate(0turn)
+    }
+}
+#app {
+    text-align: center;
+    margin: 20px auto;
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    left: 830px;
+    top: 150px;
+    border: 0px solid red
+}
+
+    #app a {
+        background-color: #b2aeae;
+        padding: 5px 10px;
+        margin-right: 15px;
+        text-decoration: none;
+        color: white;
+        border-radius: 8px;
+    }
+
+        #app a:hover {
+            background-color: #168bd8;
+        }
+
+#zhanghao {
+    width: 80px;
+    font-weight: 500;
+}
+
+#saoma {
+    width: 80px;
+    font-weight: 500;
+}
+
+.dlbtn {
+    width: 400px;
+    height: 300px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    border: 0px solid red;
+    color: white;
+    font-size: 13px;
+    border: 0px solid red
+}
+
+.smbtn {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(0,0,0,0.5);
+    border: 0px solid red;
+    text-align: center;
+    margin: 20px auto;
+    font-family: 宋体;
+    color: white;
+}
+
+.buttonHover {
+    background-color: rgba(0,0,0,0.5);
+    border: 0px solid red;
+}
+
+.txt {
+    width: 200px;
+    height: 20px;
+    outline-color: white;
+}

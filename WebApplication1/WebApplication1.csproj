@@ -1,0 +1,591 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7664CCE0-B21C-43E5-A2ED-47A67FDD4508}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44364</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="classifyManager.aspx" />
+    <Content Include="css\scorlly.js" />
+    <Content Include="payMoney.aspx" />
+    <Content Include="shopdetailed.aspx" />
+    <Content Include="JS\jquery.min.js" />
+    <Content Include="orderAdd.aspx" />
+    <Content Include="orderEditing.aspx" />
+    <Content Include="orderManager.aspx" />
+    <Content Include="shopAdd.aspx" />
+    <Content Include="shopcar.aspx" />
+    <Content Include="shopclassify2.aspx" />
+    <Content Include="shopclassifyAdd.aspx" />
+    <Content Include="shopclassifyEditing.aspx" />
+    <Content Include="shopEditing.aspx" />
+    <Content Include="shoppingcar.aspx" />
+    <Content Include="userManager.aspx" />
+    <Content Include="css\Admin.css" />
+    <Content Include="css\denglu.css" />
+    <Content Include="css\homestyle.css" />
+    <Content Include="css\index.css" />
+    <Content Include="css\jquery-1.12.4.js" />
+    <Content Include="css\vue.js" />
+    <Content Include="denglu.aspx" />
+    <Content Include="home.aspx" />
+    <Content Include="img\1.png" />
+    <Content Include="img\10.jpg" />
+    <Content Include="img\11.jpg" />
+    <Content Include="img\12.png" />
+    <Content Include="img\123.jpg" />
+    <Content Include="img\1234.jpg" />
+    <Content Include="img\13.jpg" />
+    <Content Include="img\14.jpg" />
+    <Content Include="img\15.jpg" />
+    <Content Include="img\16.jpg" />
+    <Content Include="img\17.png" />
+    <Content Include="img\18.jpg" />
+    <Content Include="img\19.jpg" />
+    <Content Include="img\2.png" />
+    <Content Include="img\20.png" />
+    <Content Include="img\21.png" />
+    <Content Include="img\22.png" />
+    <Content Include="img\23.jpg" />
+    <Content Include="img\24.jpg" />
+    <Content Include="img\25.png" />
+    <Content Include="img\26.jpg" />
+    <Content Include="img\27.jpg" />
+    <Content Include="img\28.jpg" />
+    <Content Include="img\29.png" />
+    <Content Include="img\3.1IP图标.png" />
+    <Content Include="img\3.png" />
+    <Content Include="img\30.jpg" />
+    <Content Include="img\31.jpg" />
+    <Content Include="img\32.jpg" />
+    <Content Include="img\321.jpg" />
+    <Content Include="img\33.jpg" />
+    <Content Include="img\34.jpg" />
+    <Content Include="img\35.png" />
+    <Content Include="img\4.png" />
+    <Content Include="img\456.jpg" />
+    <Content Include="img\5.png" />
+    <Content Include="img\543.jpg" />
+    <Content Include="img\6.png" />
+    <Content Include="img\7.png" />
+    <Content Include="img\777.jpg" />
+    <Content Include="img\8.jpg" />
+    <Content Include="img\8.png" />
+    <Content Include="img\88.jpg" />
+    <Content Include="img\9.jpg" />
+    <Content Include="img\987.jpg" />
+    <Content Include="img\99.jpg" />
+    <Content Include="img\a1.jpg" />
+    <Content Include="img\a2.jpg" />
+    <Content Include="img\a3.jpg" />
+    <Content Include="img\a4.jpg" />
+    <Content Include="img\a5.jpg" />
+    <Content Include="img\a6.jpg" />
+    <Content Include="img\a7.jpg" />
+    <Content Include="img\a8.jpg" />
+    <Content Include="img\a9.jpg" />
+    <Content Include="img\aix.jpg" />
+    <Content Include="img\b4.jpg" />
+    <Content Include="img\baoz.jpg" />
+    <Content Include="img\bei.jpg" />
+    <Content Include="img\candy.jpg" />
+    <Content Include="img\caom.jpg" />
+    <Content Include="img\e1.jpg" />
+    <Content Include="img\e2.jpg" />
+    <Content Include="img\e3.jpg" />
+    <Content Include="img\e4.jpg" />
+    <Content Include="img\e5.jpg" />
+    <Content Include="img\e6.jpg" />
+    <Content Include="img\e7.jpg" />
+    <Content Include="img\e8.jpg" />
+    <Content Include="img\e9.jpg" />
+    <Content Include="img\g1.jpg" />
+    <Content Include="img\g2.jpg" />
+    <Content Include="img\g3.jpg" />
+    <Content Include="img\g4.jpg" />
+    <Content Include="img\g5.jpg" />
+    <Content Include="img\g6.jpg" />
+    <Content Include="img\g7.jpg" />
+    <Content Include="img\g8.jpg" />
+    <Content Include="img\g9.jpg" />
+    <Content Include="img\gaod.jpg" />
+    <Content Include="img\green.jpg" />
+    <Content Include="img\guan.jpg" />
+    <Content Include="img\guaz.jpg" />
+    <Content Include="img\heiq.jpg" />
+    <Content Include="img\hez.jpg" />
+    <Content Include="img\icon_help.gif" />
+    <Content Include="img\IP图标.png" />
+    <Content Include="img\jianguo.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\meis.jpg" />
+    <Content Include="img\q1.jpg" />
+    <Content Include="img\q2.jpg" />
+    <Content Include="img\q3.jpg" />
+    <Content Include="img\q4.jpg" />
+    <Content Include="img\q5.jpg" />
+    <Content Include="img\q6.jpg" />
+    <Content Include="img\q7.jpg" />
+    <Content Include="img\q8.jpg" />
+    <Content Include="img\q9.jpg" />
+    <Content Include="img\qiaoqiao.jpg" />
+    <Content Include="img\qioakel.jpg" />
+    <Content Include="img\qiuqiu.jpg" />
+    <Content Include="img\ruant.jpg" />
+    <Content Include="img\s1.jpg" />
+    <Content Include="img\s2.jpg" />
+    <Content Include="img\s3.jpg" />
+    <Content Include="img\shape.png" />
+    <Content Include="img\songs.jpg" />
+    <Content Include="img\spirte.png" />
+    <Content Include="img\sup.jpg" />
+    <Content Include="img\sutpc-信息屏-离线.png" />
+    <Content Include="img\ta1.jpg" />
+    <Content Include="img\ta2.jpg" />
+    <Content Include="img\ta3.jpg" />
+    <Content Include="img\ta4.jpg" />
+    <Content Include="img\ta5.jpg" />
+    <Content Include="img\ta6.jpg" />
+    <Content Include="img\ta7.jpg" />
+    <Content Include="img\ta8.jpg" />
+    <Content Include="img\ta9.jpg" />
+    <Content Include="img\tang.jpg" />
+    <Content Include="img\tiand.jpg" />
+    <Content Include="img\touxiang.jpg" />
+    <Content Include="img\tu1.jpg" />
+    <Content Include="img\w1.jpg" />
+    <Content Include="img\w2.jpg" />
+    <Content Include="img\w3.jpg" />
+    <Content Include="img\w4.jpg" />
+    <Content Include="img\w5.jpg" />
+    <Content Include="img\w6.jpg" />
+    <Content Include="img\w7.jpg" />
+    <Content Include="img\w8.jpg" />
+    <Content Include="img\w9.jpg" />
+    <Content Include="img\x1.jpg" />
+    <Content Include="img\x2.jpg" />
+    <Content Include="img\x3.jpg" />
+    <Content Include="img\x4.jpg" />
+    <Content Include="img\x5.jpg" />
+    <Content Include="img\x6.jpg" />
+    <Content Include="img\x7.jpg" />
+    <Content Include="img\x8.jpg" />
+    <Content Include="img\x9.jpg" />
+    <Content Include="img\xiong.jpg" />
+    <Content Include="img\yaz.jpg" />
+    <Content Include="img\yigt.jpg" />
+    <Content Include="img\youzasp.jpg" />
+    <Content Include="img\yuanq.jpg" />
+    <Content Include="img\分类图标.png" />
+    <Content Include="img\初始化向导.png" />
+    <Content Include="img\商品.png" />
+    <Content Include="img\图标27.png" />
+    <Content Include="img\图标4.png" />
+    <Content Include="img\圈子.png" />
+    <Content Include="img\壁纸.png" />
+    <Content Include="img\安心壁纸.png" />
+    <Content Include="img\搜索图标.png" />
+    <Content Include="img\点赞.png" />
+    <Content Include="img\物流订单.png" />
+    <Content Include="img\白色我的.png" />
+    <Content Include="img\白色购物车.png" />
+    <Content Include="img\白色错误.png" />
+    <Content Include="img\白设置.png" />
+    <Content Include="img\皇冠.png" />
+    <Content Include="img\私信.png" />
+    <Content Include="img\粥.jpg" />
+    <Content Include="img\精品内容图标.png" />
+    <Content Include="img\装饰.png" />
+    <Content Include="img\订单.png" />
+    <Content Include="img\语音.png" />
+    <Content Include="img\还原.png" />
+    <Content Include="img\钻石图标.png" />
+    <Content Include="img\铃声,铃铛.png" />
+    <Content Include="img\首页图标.png" />
+    <Content Include="index.aspx" />
+    <Content Include="mine.aspx" />
+    <Content Include="orderManager1.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="shopclassify.aspx" />
+    <Content Include="shopdetailed2.aspx" />
+    <Content Include="shopguang.aspx" />
+    <Content Include="shopManager.aspx" />
+    <Content Include="shopserach.aspx" />
+    <Content Include="userAdd.aspx" />
+    <Content Include="userEditing.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Admin.aspx" />
+    <Content Include="shopindex.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="ZS.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="classifyManager.aspx.cs">
+      <DependentUpon>classifyManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classifyManager.aspx.designer.cs">
+      <DependentUpon>classifyManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBhelper.cs" />
+    <Compile Include="payMoney.aspx.cs">
+      <DependentUpon>payMoney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="payMoney.aspx.designer.cs">
+      <DependentUpon>payMoney.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopdetailed.aspx.cs">
+      <DependentUpon>shopdetailed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopdetailed.aspx.designer.cs">
+      <DependentUpon>shopdetailed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hadns\ShopCartHandler.ashx.cs">
+      <DependentUpon>ShopCartHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="orderAdd.aspx.cs">
+      <DependentUpon>orderAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderAdd.aspx.designer.cs">
+      <DependentUpon>orderAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orderEditing.aspx.cs">
+      <DependentUpon>orderEditing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderEditing.aspx.designer.cs">
+      <DependentUpon>orderEditing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orderManager.aspx.cs">
+      <DependentUpon>orderManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderManager.aspx.designer.cs">
+      <DependentUpon>orderManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopAdd.aspx.cs">
+      <DependentUpon>shopAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopAdd.aspx.designer.cs">
+      <DependentUpon>shopAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopcar.aspx.cs">
+      <DependentUpon>shopcar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopcar.aspx.designer.cs">
+      <DependentUpon>shopcar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopclassify2.aspx.cs">
+      <DependentUpon>shopclassify2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopclassify2.aspx.designer.cs">
+      <DependentUpon>shopclassify2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopclassifyAdd.aspx.cs">
+      <DependentUpon>shopclassifyAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopclassifyAdd.aspx.designer.cs">
+      <DependentUpon>shopclassifyAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopclassifyEditing.aspx.cs">
+      <DependentUpon>shopclassifyEditing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopclassifyEditing.aspx.designer.cs">
+      <DependentUpon>shopclassifyEditing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopEditing.aspx.cs">
+      <DependentUpon>shopEditing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopEditing.aspx.designer.cs">
+      <DependentUpon>shopEditing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shoppingcar.aspx.cs">
+      <DependentUpon>shoppingcar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shoppingcar.aspx.designer.cs">
+      <DependentUpon>shoppingcar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userManager.aspx.cs">
+      <DependentUpon>userManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userManager.aspx.designer.cs">
+      <DependentUpon>userManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="denglu.aspx.cs">
+      <DependentUpon>denglu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="denglu.aspx.designer.cs">
+      <DependentUpon>denglu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.Master.cs">
+      <DependentUpon>home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.Master.designer.cs">
+      <DependentUpon>home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mine.aspx.cs">
+      <DependentUpon>mine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mine.aspx.designer.cs">
+      <DependentUpon>mine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orderManager1.aspx.cs">
+      <DependentUpon>orderManager1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderManager1.aspx.designer.cs">
+      <DependentUpon>orderManager1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopclassify.aspx.cs">
+      <DependentUpon>shopclassify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopclassify.aspx.designer.cs">
+      <DependentUpon>shopclassify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopdetailed2.aspx.cs">
+      <DependentUpon>shopdetailed2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopdetailed2.aspx.designer.cs">
+      <DependentUpon>shopdetailed2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopguang.aspx.cs">
+      <DependentUpon>shopguang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopguang.aspx.designer.cs">
+      <DependentUpon>shopguang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopManager.aspx.cs">
+      <DependentUpon>shopManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopManager.aspx.designer.cs">
+      <DependentUpon>shopManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopserach.aspx.cs">
+      <DependentUpon>shopserach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopserach.aspx.designer.cs">
+      <DependentUpon>shopserach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userAdd.aspx.cs">
+      <DependentUpon>userAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userAdd.aspx.designer.cs">
+      <DependentUpon>userAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userEditing.aspx.cs">
+      <DependentUpon>userEditing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userEditing.aspx.designer.cs">
+      <DependentUpon>userEditing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopindex.aspx.cs">
+      <DependentUpon>shopindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopindex.aspx.designer.cs">
+      <DependentUpon>shopindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZS.aspx.cs">
+      <DependentUpon>ZS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZS.aspx.designer.cs">
+      <DependentUpon>ZS.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="home.Master" />
+    <Content Include="Admin.Master" />
+    <Content Include="Hadns\ShopCartHandler.ashx" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{750b2ccb-7848-4cb3-953c-ed10e39ac5f6}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{2c1dae50-e903-4982-97a2-c38d1c77467a}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60696</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44364/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

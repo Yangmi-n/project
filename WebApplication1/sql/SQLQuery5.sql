@@ -1,0 +1,1 @@
+select * from mv_UserBasicInfo order by MV_userId desc 

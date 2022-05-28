@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="WebApplication1.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+            <link href="css/Admin.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="top"><ul>
+    <li style="margin-left:20px;"><a href="#"><img src="../img/logo.png" style="width:60px;height:60px;margin-top:0px"/><span class="title-coud">银河便利店</span></a></li>
+    <li style="margin-left:100px;margin-right:-10px;"><a href="#"class="border">☛</a></li>
+    <li><a href="#"class="border"style="margin-right:-7px;">搜索：</a></li>
+    <li><a href="#"><asp:TextBox ID="serch" runat="server" CssClass="border" ForeColor="White" Height="23px"></asp:TextBox></a></li>
+    <li style="padding-top:14px;line-height:30px;"><a href="#"><asp:ImageButton ID="ImageButton1" runat="server" CssClass="border" Height="31px" ImageUrl="~/img/搜索图标.png" Width="24px" /></a></li>
+    <li style="margin-left:450px;">
+        <a href="shopdetailed.aspx">
+            <img src="../img/qiuqiu.jpg" />
+        </a>
+    </li>
+    <li><a href="shopdetailed.aspx"><span>很美味</span>&nbsp;▼</a></li>
+    <li><a href="mine.aspx">开通VIP</a></li>
+    <li><a href="shopdetailed.aspx"><img src="../img/装饰.png"/></a></li>
+    <li><a href="shopdetailed.aspx"><img src="../img/白设置.png"/></a></li>
+    <li><a href="register.aspx"><img src="../img/私信.png"/></a></li>
+    <li><a href="#">|</a></li>          
+    <li><a href="shopcar.aspx"><img src="../img/白色购物车.png"/></a></li>
+    <li><a href="shopguang.aspx"><img src="../img/物流订单.png"/></a></li>
+    <li><a href="WebForm1.aspx"><img src="../img/商品.png"  /></a></li>
+    <li><a href="ZS.aspx"><img src="../img/白色我的.png"  /></a></li>
+</ul></div>
+        <div id="middle">
+             <div class="left">
+            <ul>
+                <li><a href="shopindex.aspx">网站首页</a></li>
+                 <li><a href="userManager.aspx">用户管理</a>
+                    <%-- <ul>
+                         <li><a href="#">添加</a></li>
+                         <li><a href="#">删除</a></li>
+                         <li><a href="#">修改</a></li>
+                         <li><a href="#">查找</a></li>
+                     </ul>--%>
+                 </li>
+                    <li><a href="shopManager.aspx">商品管理</a>
+                        <%-- <ul>
+                         <li><a href="#">添加</a></li>
+                         <li><a href="#">删除</a></li>
+                         <li><a href="#">修改</a></li>
+                         <li><a href="#">查找</a></li>
+                     </ul>--%>
+                    </li>
+                    <li><a href="classifyManager.aspx">种类管理</a>
+                         <%--<ul>
+                         <li><a href="#">添加</a></li>
+                         <li><a href="#">删除</a></li>
+                         <li><a href="#">修改</a></li>
+                         <li><a href="#">查找</a></li>
+                     </ul>--%>
+                    </li>
+                    <li><a href="orderManager.aspx">订单管理</a>
+                        <%-- <ul>
+                         <li><a href="#">添加</a></li>
+                         <li><a href="#">删除</a></li>
+                         <li><a href="#">修改</a></li>
+                         <li><a href="#">查找</a></li>
+                     </ul>--%>
+                    </li>
+            </ul>
+        </div>
+                 <div class="right">
+              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+              </asp:ContentPlaceHolder>
+                 </div>
+          
+        </div>
+         
+            <div id="bottom">
+            <p>&copy;特别出版社</p>
+        </div> 
+    </form>
+</body>
+</html>
