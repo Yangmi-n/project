@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        #box {
+            width: 1533px;
+            height: 727px;
+        }
+
+        #top {
+            width: 1555px;
+            height: 60px;
+            line-height: 60px;
+            background-color: #ec4141;
+        }
+
+            #top ul li {
+                float: left;
+                margin-left: 10px;
+            }
+
+                #top ul li img {
+                    width: 35px;
+                    height: 35px;
+                    float: left;
+                    margin-top: 12px;
+                }
+
+                #top ul li a {
+                    color: white;
+                }
+
+        .title-coud {
+            font-family: 微软雅黑;
+            font-size: 19px;
+        }
+
+        .border {
+            border-radius: 25px;
+            background-color: #d93b3b;
+            padding: 1px 7px 3.5px 7px;
+            outline: none;
+            border: none;
+        }
+
+        #middle {
+            overflow: hidden;
+            width: 1555px;
+            height: 570px;
+            clear: left;
+            border: 1px solid red;
+        }
+
+        .left ul li img {
+            width: 35px;
+            height: 35px;
+            float:left;
+        }
+        .left ul li a span{
+            float:left;
+        }
+        .left {
+            width: 180px;
+            height: 570px;
+            padding: 10px 10px;
+            overflow-y:scroll;
+          
+            float:left;
+        }
+
+            .left ul li {
+                text-indent: 10px;
+                width: 160px;
+                height: 35px;
+                line-height: 35px;
+                clear:left;
+                font-family:微软雅黑;
+            }
+
+                .left ul li a {
+                    color: black;
+                }
+
+        .myself {
+            font-size: 13px;
+            opacity:0.5;
+        }
+        .right{
+            width:1300px;
+            height:700px;
+            border:1px solid red;
+            float:left;
+        }
+        .right-title{
+            height:40px;
+            line-height:40px;
+        }
+            .right-title li{
+                float:left;
+                margin-left:40px;
+            }
+                .right-title li>a{
+                    color:black;
+                }
+        #img {
+            width: 570px;
+            height: 200px;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-left: 350px;
+            border:1px solid red;
+           
+        }
+        
+        
+    </style>
+
+    <script src="../jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+                $(".left>ul>li:not(.myself)").mouseover(function () {
+                    $(this).css("backgroundColor", "#f6f6f7");
+                })
+                    .mouseout(function () {
+                        $(this).css("backgroundColor", "white");
+                    });
+            $(".left>ul>li:not(.myself)").click(function () {
+                $(this).css({ "font-size": "17px", "font-weight": "bolder" });
+            });
+            $(".right-title li").click(function () {
+                $(this).css({ "font-size": "19px", "font-weight": "bolder", "border-bottom": "4px solid #ec4141" })
+            });
+            var a = new Array("../image/tc.jpg", "../image/luxiang.png", "../image/guanji.png", "../image/tc.jpg", "../image/tc.jpg", "../image/dingwei.png", "../image/tc.jpg");
+            var index = 0;
+            function m() {
+                index++;
+                if (index == a.length) {
+                    index = 0;
+                }
+                $("#img").attr("src", a[index]);
+            }
+            setInterval(m, 1000);
+            $("#img").mouseover(function () {
+              clearInterval(m);
+            })
+            });
+    </script>
+   <!--实现图片轮番js效果
+    <script>
+        var img = new Array("../image/tc.jpg", "../image/luxiang.png", "../image/guanji.png", "../image/tc.jpg", "../image/tc.jpg", "../image/dingwei.png", "../image/tc.jpg");
+        var index = 0;
+        var s = setTimeout("time()", 1000);
+        function time() {
+           index++;
+            if (index == img.length) {
+                index = 0;
+            }
+            document.getElementById("img").src =img[index];
+            s = setTimeout("time()", 1000);     
+        }
+    </script>-->
+</head>
+<body>
+<div id="box">
+    <div id="top"><ul>
+    <li><a href="#"><img src="../image/guanji.png" width="40" height="40" /><span class="title-coud">网易云音乐</span></a></li>
+    <li style="margin-left:100px;"><a href="#"class="border"><</a></li>
+    <li><a href="#"class="border">></a></li>
+    <li><a href="#"><input type="text" placeholder="搜索"class="border"style=" height: 23px;
+        background-image: url('../image/guanji.png');background-size:25px;background-repeat :no-repeat;background-position-x:5px; text-indent:22px;
+"/></a></li>
+    <li><a href="#"><img src="../image/guanji.png"class="border"style="height:31px;width:24px;" /></a></li>
+    <li style="margin-left:480px;">
+        <a href="#">
+            <img src="../image/guanji.png" />
+        </a>
+    </li>
+    <li><a href="#"><span>很美味</span>&nbsp;▼</a></li>
+    <li><a href="#">开通VIP</a></li>
+    <li><a href="#"><img src="../image/shangchuan.png" /></a></li>
+    <li><a href="#"><img src="../image/shangchuan.png" /></a></li>
+    <li><a href="#"><img src="../image/shangchuan.png" /></a></li>
+    <li><a href="#">|</a></li>
+    <li><a href="#"><img src="../image/shangchuan.png" /></a></li>
+    <li><a href="#"><img src="../image/shangchuan.png" /></a></li>
+    <li><a href="#"><img src="../image/shangchuan.png" /></a></li>
+    <li><a href="#"><img src="../image/shangchuan.png" /></a></li>
+</ul></div>
+    <div id="middle">
+        <div class="left">
+            <ul>
+                <li><a href="#">发现音乐</a></li>
+                <li><a href="#">视频</a></li>
+                <li><a href="#">朋友</a></li>
+                <li><a href="#">直播</a></li>
+                <li><a href="#">私人FM</a></li>
+                <li class="myself"><a href="#">我的音乐</a></li>
+                <li><a href="#"><img src="../image/dingwei.png" /><span>本地音乐</span></a></li>
+                <li><a href="#"><img src="../image/dingwei.png" /><span>下载管理</span></a></li>
+                <li><a href="#"><img src="../image/dingwei.png" /><span>我的音乐云盘</span></a></li>
+                <li><a href="#"><img src="../image/dingwei.png" /><span>我的电台</span></a></li>
+                <li><a href="#"><img src="../image/dingwei.png" /><span>我的收藏</span></a></li>
+                <li class="myself"><a href="#">创建的歌单</a></li>
+                <li><a href="#"><img src="../image/dingwei.png" /><span>我喜欢的音乐</span><img src="../image/dingwei.png" /></a></li>
+                <li><a href="#"><img src="../image/dingwei.png" /><span>我的收藏</span></a></li>
+                <li><a href="#"><img src="../image/dingwei.png" /><span>我的收藏</span></a></li>
+                <li><a href="#"><img src="../image/dingwei.png" /><span>我的收藏</span></a></li>
+                <li><a href="#"><img src="../image/dingwei.png" /><span>我的收藏</span></a></li>
+                <li><a href="#"><img src="../image/dingwei.png" /><span>我的收藏</span></a></li>
+                <li><a href="#"><img src="../image/dingwei.png" /><span>我的收藏</span></a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="right-top">
+                <ul class="right-title">
+                    <li><a href="#">个性推荐</a> </li>
+                    <li><a href="#">歌单</a></li>
+                    <li><a href="#">主播电台</a></li>
+                    <li><a href="#">排行榜</a> </li>
+                    <li><a href="#">歌手</a></li>
+                    <li><a href="#">最新音乐</a></li>
+                </ul>
+                <div >
+                    <img src="../image/tc.jpg" id="img"/>
+                </div>
+            </div>
+            <div class="right-bottom"></div>
+        </div>
+    </div>
+    <div id="bottom"></div>
+</div>
+</body>
+</html>
